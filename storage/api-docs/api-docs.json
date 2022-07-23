@@ -1,0 +1,57 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Scrabble APIs",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/getAvailableGame/{type}": {
+            "get": {
+                "tags": [
+                    "Gestions parties"
+                ],
+                "summary": "Récupérer Partie avec un type précis",
+                "operationId": "19fc4980c0b466a97ae7112abad99ff0",
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    }
+                }
+            }
+        },
+        "/api/getGameById/{gameId}": {
+            "get": {
+                "tags": [
+                    "Gestions parties"
+                ],
+                "summary": "Récupérer Partie avec ID",
+                "operationId": "6e5273c4e645ad417f5e55b2e035a6d7",
+                "parameters": [
+                    {
+                        "name": "gameId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    }
+                }
+            }
+        }
+    }
+}
